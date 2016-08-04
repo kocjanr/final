@@ -1,0 +1,35 @@
+<form method="get" action="52.41.104.190:3001/insert">
+	Workout:<input type="text" name="name" id="name"><br>
+	reps:<input type="text" name="reps" id="reps"><br>
+	weight:<input type="text" name="weight" id="weight"><br>
+	date:<input type="text" name="date" id="date"><br>
+	lbs:<input type="text" name="lbs" id="lbs"><br>
+	<input type="submit" value="Submit">
+</form>
+
+/*
+<form method="post">
+  Exercise:<input type="text" name="name" id="name">
+  <br>Reps: <input type="text" name="reps" id="reps">
+  <br>Weight: <input type="text" name="weight" id="weight">
+  <br>Date: <input type="text" name="date" id="date">
+  <br>Pounds: <input type="text" name="lbs" id="lbs">
+  <br><input type="submit" name="Add Workout" value="Add Workout">
+</form>
+{{#if workouts}}
+<ul>
+	{{#each workout}}
+	<li>
+		<h3>{{this.name}}</h3>
+		<h4>{{this.reps}}</h4>
+		<h5>{{this.weight}}</h5>
+		<h6>{{this.date}}</h6>
+		<h7>{{this.lbs}}</h7>
+		<form method="post">
+			<input type="hidden" name="id" value="{{this.id}}">
+			<input type="submit" name="Done" value="Mark as Done">
+		</form>
+	</li>
+	{{//each}}
+	</ul>
+	{{/if}} */
